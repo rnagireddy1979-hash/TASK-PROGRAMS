@@ -1,0 +1,10 @@
+m=int(input("enter m value"))
+n=int(input("enter n value"))
+product=1
+if(m>n):
+    print(-1)
+else:
+    for i in range (m,n+1):
+        product*=i
+    print("product:",product)
+        
