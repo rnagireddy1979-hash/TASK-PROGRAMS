@@ -1,0 +1,17 @@
+def is_prime(num):
+    if num<=1:
+        return False
+    for i in range(2, int(num**0.5)+1):  
+        if num % i == 0:
+            return False
+    return True
+def sum_of_primes_in_range(m,n):
+    prime_sum=0
+    for num in range(m,n+1):
+        if is_prime(num):
+            prime_sum+=num
+    return prime_sum
+m=int(input("enter m value:"))
+n=int(input("enter n value:"))
+result = sum_of_primes_in_range(m,n)
+print(f"The sum of prime numbers between {m} and {n} is: {result}")
