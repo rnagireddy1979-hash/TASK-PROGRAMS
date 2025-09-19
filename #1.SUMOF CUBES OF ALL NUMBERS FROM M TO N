@@ -1,0 +1,9 @@
+m=int(input("enter m value"))
+n=int(input("enter n value"))
+sum=0
+if(m>n):
+    print("value of m should be less than n")
+else:
+    for i in range (m,n+1):
+        sum+=i**3
+print("sum:",sum)
