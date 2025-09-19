@@ -1,0 +1,12 @@
+import math
+def sum_factorials(m,n):
+    sum=0
+    if(m>n):
+        return 0
+    else:
+        for i in range(m,n+1):
+            sum+=math.factorial(i)
+        return sum
+m=int(input("enter m value"))
+n=int(input("enter n value"))
+print(f"Sum of factorials from {m} to {n} is:", sum_factorials(m, n))
